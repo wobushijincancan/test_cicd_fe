@@ -39,7 +39,7 @@ function App() {
       {/* 显示接口返回内容 */}
       {data && (
         <div style={{ marginTop: '20px', fontSize: '18px' }}>
-          <p>{data.value}</p>
+          <p>{data.data}</p>
         </div>
       )}
     </div>

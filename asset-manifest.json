@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.f855e6bc.css",
-    "main.js": "/static/js/main.a8e5e2ab.js",
-    "static/js/453.91afb23e.chunk.js": "/static/js/453.91afb23e.chunk.js",
-    "index.html": "/index.html",
-    "main.f855e6bc.css.map": "/static/css/main.f855e6bc.css.map",
-    "main.a8e5e2ab.js.map": "/static/js/main.a8e5e2ab.js.map",
-    "453.91afb23e.chunk.js.map": "/static/js/453.91afb23e.chunk.js.map"
+    "main.css": "/你的仓库名/static/css/main.f855e6bc.css",
+    "main.js": "/你的仓库名/static/js/main.d2174964.js",
+    "static/js/453.91afb23e.chunk.js": "/你的仓库名/static/js/453.91afb23e.chunk.js",
+    "index.html": "/你的仓库名/index.html",
+    "main.f855e6bc.css.map": "/你的仓库名/static/css/main.f855e6bc.css.map",
+    "main.d2174964.js.map": "/你的仓库名/static/js/main.d2174964.js.map",
+    "453.91afb23e.chunk.js.map": "/你的仓库名/static/js/453.91afb23e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.a8e5e2ab.js"
+    "static/js/main.d2174964.js"
   ]
 }

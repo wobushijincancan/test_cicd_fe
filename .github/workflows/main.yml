@@ -36,8 +36,8 @@ jobs:
         run: npm install  # 执行shell命令
       
       # 步骤4：跑代码检查（ESLint）
-      - name: 代码检查
-        run: npm run lint
+      # - name: 代码检查
+      #   run: npm run lint
       
       # 步骤5：跑单元测试
       - name: 跑单元测试

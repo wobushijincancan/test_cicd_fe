@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/你的仓库名/static/css/main.f855e6bc.css",
-    "main.js": "/你的仓库名/static/js/main.d2174964.js",
-    "static/js/453.91afb23e.chunk.js": "/你的仓库名/static/js/453.91afb23e.chunk.js",
-    "index.html": "/你的仓库名/index.html",
-    "main.f855e6bc.css.map": "/你的仓库名/static/css/main.f855e6bc.css.map",
-    "main.d2174964.js.map": "/你的仓库名/static/js/main.d2174964.js.map",
-    "453.91afb23e.chunk.js.map": "/你的仓库名/static/js/453.91afb23e.chunk.js.map"
+    "main.css": "/test_cicd_fe/static/css/main.f855e6bc.css",
+    "main.js": "/test_cicd_fe/static/js/main.77c6724c.js",
+    "static/js/453.91afb23e.chunk.js": "/test_cicd_fe/static/js/453.91afb23e.chunk.js",
+    "index.html": "/test_cicd_fe/index.html",
+    "main.f855e6bc.css.map": "/test_cicd_fe/static/css/main.f855e6bc.css.map",
+    "main.77c6724c.js.map": "/test_cicd_fe/static/js/main.77c6724c.js.map",
+    "453.91afb23e.chunk.js.map": "/test_cicd_fe/static/js/453.91afb23e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.d2174964.js"
+    "static/js/main.77c6724c.js"
   ]
 }

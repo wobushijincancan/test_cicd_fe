@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: wobushijincan/test-cicd-fe:latest
+    container_name: test-cicd-fe
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  backend:
+    image: wobushijincan/test-cicd-be:latest
+    container_name: test-cicd-be
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+    ports:
+      - "4000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    restart: unless-stopped
+
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - WATCHTOWER_CLEANUP=true
+      - WATCHTOWER_POLL_INTERVAL=60
+      - WATCHTOWER_LABEL_ENABLE=true
+      - DOCKER_API_VERSION=1.40    # 👈 加这一行！强制使用新版API
+    restart: unless-stopped

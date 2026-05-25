@@ -1,0 +1,48 @@
+# 工作流的名字
+name: 前端CI流程
+
+# 什么时候触发这个工作流
+on:
+  # 1. 当有人 push 代码到 main 分支时触发
+  push:
+    branches: [ main ]
+  
+  # 2. 当有人提交 PR 到 main 分支时触发
+  pull_request:
+    branches: [ main ]
+
+# 工作流里的任务
+jobs:
+  # 第一个任务：构建和测试
+  build:
+    # 在什么环境跑（Ubuntu系统，最常用）
+    runs-on: ubuntu-latest
+    
+    # 任务的步骤
+    steps:
+      # 步骤1：把代码拉到虚拟机里
+      - name: 检出代码
+        uses: actions/checkout@v4  # 官方写好的action，直接用
+      
+      # 步骤2：安装 Node.js 环境
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4  # 官方action
+        with:
+          node-version: '20'  # 指定Node版本，跟你项目保持一致
+          cache: 'npm'        # 缓存npm依赖，加速下次运行
+      
+      # 步骤3：安装依赖
+      - name: 安装依赖
+        run: npm install  # 执行shell命令
+      
+      # 步骤4：跑代码检查（ESLint）
+      - name: 代码检查
+        run: npm run lint
+      
+      # 步骤5：跑单元测试
+      - name: 跑单元测试
+        run: npm run test
+      
+      # 步骤6：构建生产包
+      - name: 构建项目
+        run: npm run build

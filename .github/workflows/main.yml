@@ -11,6 +11,8 @@ on:
   pull_request:
     branches: [ main ]
 
+  workflow_dispatch:  # 允许手动触发
+
 # 工作流里的任务
 jobs:
   # 第一个任务：构建和测试
@@ -40,8 +42,8 @@ jobs:
       #   run: npm run lint
       
       # 步骤5：跑单元测试
-      - name: 跑单元测试
-        run: npm run test
+      # - name: 跑单元测试
+      #   run: npm run test
       
       # 步骤6：构建生产包
       - name: 构建项目

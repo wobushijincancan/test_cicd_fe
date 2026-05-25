@@ -53,6 +53,8 @@ jobs:
       # 步骤6：构建生产包
       - name: 构建项目
         run: npm run build
+        env:
+          PUBLIC_URL: /你的仓库名   # 关键！
 
       # 部署到 GitHub Pages
       - name: 部署到 GitHub Pages
